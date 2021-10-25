@@ -20,7 +20,9 @@ I was curious about whether there were patterns to out-of-state ownership, so I 
 
 ## Data sources
 
-The City of Richmond Assessor's Office has a public data set of property ownership files. The primary source for ownership is the "Real Estate Master File". You can [read more about them and access XLSX files at their site](https://www.rva.gov/assessor-real-estate/data-request). Text/CSV files have historically been available at the FTP site: ftp://ftp.ci.richmond.va.us/Assessor/Real%20Tables/
+The `data` directory is empty in this repo to avoid duplicating public data. Here's what was in there:
+
+The City of Richmond Assessor's Office has a public data set of property ownership files. The primary source for ownership is the "Real Estate Master File". You can [read more about them and access XLSX files at their site](https://www.rva.gov/assessor-real-estate/data-request). Text/CSV files have historically been available at [the FTP site](ftp://ftp.ci.richmond.va.us/Assessor/Real%20Tables/).
 
 For mapping the ownership of parcels, you'll also need the [Parcels](https://richmond-geo-hub-cor.hub.arcgis.com/datasets/parcels-1/) GIS file. See [here for more City of Richmond GIS resources](https://www.rva.gov/information-technology/geographic-information-systems), including the [Basemap](https://richmond-geo-hub-cor.hub.arcgis.com/search?tags=basemap) files.
 
