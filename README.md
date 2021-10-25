@@ -10,7 +10,7 @@ The primary outcome is this map of residential parcels in the city, grouped into
 
 ![Richmond homes - owned vs rented](images/rent_vs_own.png)
 
-This whole project was inspired by something [Damon Harris](https://twitter.com/ThatsDame) of [Teal House Company](https://www.tealhousecompany.com/) said in a talk. Afterward, he wondered how this map would look with a [redlining map](https://dsl.richmond.edu/panorama/redlining/) overlayed on it, so I gave it a try, with predictably depressing results. These grades were assigned by the Home Owner's Loan Corporation (HOLC) in 1937, mostly based on racial composition. Over 80 years later, you can see that areas with a grade of A still have a 91% homeownership rate, while areas rated D have 55% homeownership. See below for more details about my process in coming up with these numbers.
+This whole project was inspired by something [Damon Harris](https://twitter.com/ThatsDame) of [Teal House Company](https://www.tealhousecompany.com/) said in a talk. Afterward, he wondered how this map would look with a [redlining map](https://dsl.richmond.edu/panorama/redlining/) overlayed on it, so I gave it a try, with predictably depressing results. These grades were assigned by the Home Owner's Loan Corporation (HOLC) in 1937, mostly based on racial composition. Over 80 years later, you can see that areas with a grade of A still have a 91% homeownership rate, while areas rated D have 55% homeownership. See below for more details about my process - and please note that this is an estimated percentage of buildings which are owned by the residents, not the percentage of people who own their home. I'm still working on that one.
 
 ![HOLC redlining areas correspond to much lower homeownership rates](images/redlined_ownership.png)
 
@@ -71,3 +71,5 @@ This field is the ownership % for each HOLC grade. For the **holc_ric_groups_228
         )
 
 In other words, calculate the mean value of **resOwner** for each parcel contained within the group of polygons that defines this HOLC grade.
+
+Note that each apartment building counts as 1 parcel, so this statistic is not a good estimate of the percentage of *people* who own the building they live in; it's the percentage of buildings which are owned by people living there.
